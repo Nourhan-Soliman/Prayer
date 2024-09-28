@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:wght@200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(51, 40, 34, 0.8);
+  backdrop-filter: blur(10px);
+  background: url(assets/bg.jpg) center/cover no-repeat;
+}
+
+.container {
+  width: 650px;
+  padding: 30px 25px;
+  background: #332a224e;
+  border-radius: 18px;
+  border: 1px solid rgba(215, 215, 215, 0.3);
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+section .top-sec {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.3);
+}
+
+section .top-sec select {
+  width: 250px;
+  border-radius: 5px;
+  outline: none;
+  background: #a54f3a;
+  padding: 2px 10px;
+  color: #fff;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+section .top-sec h3 {
+  font-size: 26px;
+  color: #fff;
+}
+
+section .top-sec .date {
+  width: 250px;
+}
+
+section .top-sec .date h4 {
+  font-size: 26px;
+  color: #fff;
+}
+
+section .prayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  background: #a54f3a;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(215, 215, 215, 0.3);
+  transition:  0.3s ease; 
+}
+
+section .prayer:hover {
+  background: #f07d60;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  section .top-sec {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  section .top-sec h3,
+  section .top-sec .date h4 {
+    font-size: 24px;
+  }
+
+  section .top-sec select {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  section .prayer {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  section .top-sec h3,
+  section .top-sec .date h4 {
+    font-size: 20px;
+  }
+
+  section .prayer {
+    font-size: 22px;
+  }
+}
